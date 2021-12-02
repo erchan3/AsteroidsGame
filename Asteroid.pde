@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Asteroid extends Floater
 {
   private double angVel, radius;
@@ -11,7 +9,7 @@ class Asteroid extends Floater
     {
       angles[i] = Math.random() * 2 * Math.PI;
     }
-    Arrays.sort(angles);
+    angles = sort(angles);
     xCorners = new int[corners];
     yCorners = new int[corners];
     for (int i = 0; i < corners; i++)
