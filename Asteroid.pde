@@ -4,10 +4,10 @@ class Asteroid extends Floater
   public Asteroid() {
     radius = Math.random() * 15 + 15;
     corners = (int)(Math.random() * 5) + 10;
-    double[] angles = new double[corners];
+    float[] angles = new float[corners];
     for (int i = 0; i < angles.length; i++)
     {
-      angles[i] = Math.random() * 2 * Math.PI;
+      angles[i] = (float)(Math.random() * 2 * Math.PI);
     }
     angles = sort(angles);
     xCorners = new int[corners];
