@@ -77,6 +77,8 @@ class Spaceship extends Floater
 
     if (myA > 0)
     {
+      fill(206, 57, 4);
+      stroke(206, 57, 4);
       beginShape();
       vertex(-11, -5);
       vertex(-20, -7);
@@ -92,4 +94,7 @@ class Spaceship extends Floater
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
   }
+  
+  public double getX() {return myCenterX;}
+  public double getY() {return myCenterY;}
 }
