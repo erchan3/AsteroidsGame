@@ -35,7 +35,6 @@ class Asteroid extends Floater
     
   }
   
-  @Override
   public void move()
   {
     super.move();
